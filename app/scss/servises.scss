@@ -1,1 +1,84 @@
 @import 'global.scss';
+
+.servises {
+
+            .servises__title {
+                  text-align: center;
+                  display: flex;
+                  flex-flow: column nowrap;
+                  align-items: center;
+                  
+            }
+            .servises__title-h2 {  
+
+                 max-width: 739px;
+                 font-size: $fn-l;
+                 font-family: $font-bold;
+                 line-height: 53px;
+                 margin-bottom: 50px;
+            }
+            .servises__title-text {
+                  max-width: 730px;
+                  font-size: $fn-s;
+                  font-family: $font-regular;
+                  color: $color-white;
+                  margin-top: 0;
+            }
+            .servises__creating {
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: 110px;
+                  margin-bottom: 50px;
+            }
+            .servises__creating-list {
+                  list-style-type: none;
+                  position: relative;
+                  padding-left: 120px;
+            }
+            .servises__creating-list-item {
+
+                        h4 {
+                              font-size: $fn-m;
+                              font-family: $font-bold;
+                              margin-top: 0;
+                        }
+
+                        p {
+                              font-size: $fn-xs + 1;
+                              font-family: $font-regular;
+                              color: $color-white;
+                              max-width: 222px;
+                              display: inline-block;
+                              line-height: 22px;
+                              margin-top: 0;
+                        }
+                        &:nth-child(1){
+                              position: absolute;
+                              top: -10px;
+                              left: 25px;
+                              width: 40px;
+
+                                    &::before{
+                                          content: url("../images/servises/Ellipse.svg");
+                                          position: absolute;
+                                          left: -23px;
+                                          top: -24px;
+                                         
+                                    }
+                                    &::after{
+                                          content: url("../images/servises/Ellipse-2.svg");
+                                          position: absolute;
+                                          left: -34px;
+                                          top: -34px;
+                                         
+                                    }
+                        }
+            }
+            .servises__button{
+                  display: flex;
+                  justify-content: center;
+                  
+            }
+      
+}
+
