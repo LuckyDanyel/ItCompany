@@ -1,0 +1,61 @@
+@import 'global';
+
+
+.video {
+      background-image: url('../images/video/Rectangle.jpg');
+      background-repeat: no-repeat;
+      padding-top: 90px;
+            &__title {
+                  text-align: center;
+                 
+            }
+            &__title-h2 {
+                 
+                  margin-top: 0;
+                  font-family: $font-bold;
+                  font-size: $fn-l;
+                  color: white;
+            }
+            &__title-h4 {
+                  font-family: $font-regular;
+                  font-size: $fn-s;
+                  color: white;
+                  font-weight: 100;
+                  margin-bottom: 70px;
+            }
+            &__content {
+                  position: relative;
+                  padding-bottom: 85px;
+                  border-bottom: 1px solid #E0E0E0;
+            }
+            &__content-watch {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  
+            }
+            &__content-watch-image{
+                 max-width: 1000px ;
+            }
+            &__content-btn {
+                  width: 300px;
+                  height: 100px;
+                  border: 1px solid white;
+                  position: absolute;
+                  bottom: 50%;
+                  display: flex;
+                  justify-content: space-evenly;
+                  align-items: center;
+                  border-radius: 100px;
+                        a{
+                              display: inline-block;
+                              width: 60px;
+                        }
+                        h5{
+                              font-size: $fn-s;
+                              font-family: $font-medium;
+                              color: white;
+                              font-weight: 100;
+                        }
+            }
+}
