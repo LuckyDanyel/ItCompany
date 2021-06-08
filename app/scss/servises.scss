@@ -2,14 +2,14 @@
 
 .servises {
 
-            .servises__title {
+            &__title {
                   text-align: center;
                   display: flex;
                   flex-flow: column nowrap;
                   align-items: center;
                   
             }
-            .servises__title-h2 {  
+            &__title-h2 {  
 
                  max-width: 739px;
                  font-size: $fn-l;
@@ -17,25 +17,25 @@
                  line-height: 53px;
                  margin-bottom: 50px;
             }
-            .servises__title-text {
+            &__title-text {
                   max-width: 730px;
                   font-size: $fn-s;
                   font-family: $font-regular;
                   color: $color-white;
                   margin-top: 0;
             }
-            .servises__creating {
+            &__creating {
                   display: flex;
                   justify-content: space-between;
                   margin-top: 110px;
                   margin-bottom: 50px;
             }
-            .servises__creating-list {
+            &__creating-list {
                   list-style-type: none;
                   position: relative;
                   padding-left: 120px;
             }
-            .servises__creating-list-item {
+            &__creating-list-item {
 
                         h4 {
                               font-size: $fn-m;
@@ -74,7 +74,7 @@
                                     }
                         }
             }
-            .servises__button{
+            &__button{
                   display: flex;
                   justify-content: center;
                   
