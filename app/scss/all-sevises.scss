@@ -1,0 +1,73 @@
+@import 'global';
+
+.all-servises {
+            &__up {
+                  background-color: $color-bg-all-sevises;
+                  height: 500px;
+                  padding-top: 90px;
+                  box-sizing: border-box;
+            }
+            
+            &__up-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                  h2{
+                        color: white;
+                        font-family: $font-bold;
+                        font-size: $fn-l;
+                        max-width: 540px;
+                        line-height: 53px;
+                  }
+                  a{
+
+                  }
+            }
+           
+            &__down {
+                 height: 500px;
+            }
+            &__down-container {
+                  display: flex;
+                  justify-content: space-between;
+                  position: relative;
+                  bottom: 222px;
+                  padding-bottom: 85px;
+                  border-bottom: 1px solid #E0E0E0;
+                  max-width: 1150px;
+                  margin: 0 auto;
+            }
+            &__down-list {
+                  list-style-type: none;
+                  padding-left: 0;
+            }
+            &__down-item {
+
+                  div{
+                        max-width: 350px;
+                  }
+                  h3{
+                        font-family: $font-bold;
+                        font-size: $fn-m;
+                        margin-top: 40px;
+                  }
+                  span{
+                        color: $color-btn;
+                  }
+                  p{
+                        line-height: 25px;
+                        font-family: $font-regular;
+                        font-size: $fn-s;
+                        color: $color-white;
+                        margin-bottom: 32px;
+                  }
+                  a{
+                        font-family: $font-medium;
+                        font-size: $fn-s;
+                        color: $color-btn;
+                              &:hover{
+                                    border-bottom: 1px solid $color-btn;
+                              }
+                  }
+            }
+}
