@@ -1,0 +1,108 @@
+@import 'global';
+
+
+.footer {
+      
+      padding-top: 70px;
+      padding-bottom: 20px;
+      background-color: $color-bg-about;
+            &__container{
+                  display: flex;
+                  justify-content: space-between;
+                  max-width: 1200px;
+                  margin: 0 auto;
+                  padding-bottom: 50px;
+                  border-bottom: 1px solid #E0E0E0;
+            }
+            &__list {
+                  list-style-type: none;
+                  padding-left: 0;
+                  flex-basis: 25%;
+                  height: 250px;
+                  
+                  
+            }
+
+            &__item {
+                  font-family: $font-regular;
+                  font-size: $fn-s;
+                  color: $color-white;
+                  margin: 30px 0;
+                  display: flex;
+                 align-items: center;
+
+                        &:nth-child(1){
+                              color: black;
+                              font-family: $font-bold;
+                              font-size: $fn-m;
+                        }
+                        a{
+                              color: inherit;
+                              transition: $time;
+
+                                    &:hover{
+                                         color: $color-btn;
+                                    }
+                        }
+                  
+            }
+            ////--------------////
+           
+            &__item-contact {
+               
+               
+                  &::before{
+                  display: flex;
+                      align-items: center;
+                     height: 19px;
+                       margin-right: 18px;
+                  }
+                        &:nth-child(2){
+
+                              &::before{
+                                    content: url("../images/footer/envelope.svg");
+                                    
+                                    
+                              }
+                              
+                        }
+                        &:nth-child(3){
+
+                              &::before{
+                                    content: url("../images/footer/call.svg");
+                               
+                              }
+                        }
+                        &:nth-child(4){
+
+                              &::before{
+                                    content: url("../images/footer/placeholder.svg");
+                                  
+                              }
+                        }
+            }
+            &__item--arrow-right{
+
+                  &::before{
+                        content: ' ';
+                        width: 10px;
+                        height: 10px;
+                        border-top: 1px solid $color-white;
+                        border-right: 1px solid $color-white;
+                        margin-right: 15px;
+                        transform: rotate(45deg);
+                        display: block;
+                  }
+            }
+           
+            ////--------------////
+      &__text{
+            font-family: $font-regular;
+            font-size: $fn-s - 1;
+            display: block;
+            text-align: center;
+            margin-top: 35px;
+            margin-bottom: 0;
+            color: $color-white;
+      }
+}
