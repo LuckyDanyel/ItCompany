@@ -4,6 +4,7 @@
 .video {
       background-image: url('../images/video/Rectangle.jpg');
       background-repeat: no-repeat;
+      background-size: contain;
       padding-top: 90px;
             &__title {
                   text-align: center;
