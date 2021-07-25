@@ -60,4 +60,7 @@
                   font-size: $fn-xs - 1;
                   color: $color-white;
             }
+      @include media(medium){
+            margin-top: 150px;
+      }
 }

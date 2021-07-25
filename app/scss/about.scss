@@ -12,6 +12,7 @@
             }
             &__title-heading {
                   max-width: 500px;
+                  margin-right: 50px;
                         h3 { font-size: $fn-l;
                         font-family: $font-bold;
 
@@ -33,6 +34,7 @@
             }
             &__title-image {
                   width: 500px;
+                  min-width: 350px;
                   
                   
             }
@@ -72,4 +74,35 @@
                               font-weight: 100;
                         }
             }
+      @include media(medium){
+            &__title {
+                  flex-flow: column;
+                  align-items: flex-start;
+            }
+            &__title-heading {
+                  padding-left: 14px;
+                  margin-bottom: 15px;
+            }
+            &__title-image {
+                  
+                  min-width: 200px;
+                  
+                  
+            }
+      }
+      @include media(mediumSmall){
+
+            &__project {
+                  flex-flow: column;
+                  align-items: center;
+            }
+      }
+      @include media(small) {
+      padding-top: 10px;
+            &__title-image {
+                  width: 100%;
+                  
+            }
+           
+      }
 }

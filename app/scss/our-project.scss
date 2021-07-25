@@ -29,6 +29,8 @@
             justify-content: space-between;
                   div{
                         width: 255px;
+                        margin: 0 15px;
+                        min-width: 220px;
                   }
       }
 
@@ -37,5 +39,29 @@
             justify-content: center;
             margin-top: 55px;
       }
+
+      @include media(large){
+            &__image {
+                  
+                  display: flex;
+                  flex-flow: row wrap;
+                  justify-content: space-evenly;
+                        div {
+                              width: 40%;
+                              margin-bottom: 40px;
+                        }
+            }
+      }
+      
+      @include media(medium){
+          padding-bottom: 90x;
+      }
+      @include media(verySmall) {
+            margin-top: 305px;
+            padding-top: 50px;
+      }
+      
+
 }
+
 

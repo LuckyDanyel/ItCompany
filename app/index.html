@@ -12,12 +12,19 @@
             <div class="header__up">
                   <div class="header__container-menu">
                         <nav class="header__menu">
-                              <a class = "header__menu-item header__menu-item_active" href="#">Главная</a>
-                              <a class = "header__menu-item header__menu-item_active" href="#">Наши проекты</a>
-                              <a class = "header__menu-item header__menu-item_active" href="#">Услуги</a>
-                              <a class = "header__menu-item header__menu-item_active" href="#">Новости</a>
-                              <a class = "header__menu-item header__menu-item_active" href="#">Контакты</a>
+                              <a class = "header__menu-item header__menu-item_hover header__menu-item_active" href="#">Главная</a>
+                              <a class = "header__menu-item header__menu-item_hover" href="#">Наши проекты</a>
+                              <a class = "header__menu-item header__menu-item_hover" href="#">Услуги</a>
+                              <a class = "header__menu-item header__menu-item_hover" href="#">Новости</a>
+                              <a class = "header__menu-item header__menu-item_hover" href="#">Контакты</a>
                         </nav>
+                        <div class="header__burger-menu">
+                              <div>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                              </div>
+                        </div>
                   </div>
             </div>
             <div class="container">
@@ -143,7 +150,7 @@
                   </div>
                   <div class="video__content">
                         <div class="video__content-watch">
-                              <img cass = "video__content-watch-image" src="./images/video/video.png" alt="">
+                              <img class = "video__content-watch-image" src="./images/video/video.png" alt="">
                               <div class = "video__content-btn">
                                     <a href="#"><img src="./images/video/play-button.svg" alt=""></a>
                                     <h5>Смотреть видео</h5>
@@ -167,33 +174,36 @@
       </section>
       <footer class="footer">
             <div class="footer__container">
-                  <ul class="footer__list footer__list-contact">
-                        <li class = "footer__item footer__item-contact">Контактная информация</li>
-                        <li class = "footer__item footer__item-contact">test@test.ru</li>
-                        <li class = "footer__item footer__item-contact">+8 777 555 66 99</li>
-                        <li class = "footer__item footer__item-contact">Москва, Бульвар Ленина 33</li>
-                  </ul>
-                  <ul class="footer__list ">
-                        <li class = "footer__item ">Основные ссылки</li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">Главная</a></li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">Наши проекты</a></li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">Наши услуги</a></li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">Контакты</a></li>
-                  </ul>
-                  <ul class="footer__list ">
-                        <li class = "footer__item ">Наши проекты</li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">РосНано</a></li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">Сколково</a></li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">Проект “Восток”</a></li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">Проект “Восток”</a></li>
-                  </ul>
-                  <ul class="footer__list ">
-                        <li class = "footer__item ">Социальные сети</li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">VK.com</a></li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">Instagram</a></li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">Facebook</a></li>
-                        <li class = "footer__item footer__item--arrow-right"><a href="#">Twitter</a></li>
-                  </ul>
+                  
+                        <ul class="footer__list footer__list-contact">
+                              <li class = "footer__item footer__item-contact "><h3 class="footer__item-h3">Контактная информация</h3></li>
+                              <li class = "footer__item footer__item-contact">test@test.ru</li>
+                              <li class = "footer__item footer__item-contact">+8 777 555 66 99</li>
+                              <li class = "footer__item footer__item-contact">Москва, Бульвар Ленина 33</li>
+                        </ul>
+                        <ul class="footer__list ">
+                              <li class = "footer__item "><h3 class="footer__item-h3">Основные ссылки </h3></li> 
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">Главная</a></li>
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">Наши проекты</a></li>
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">Наши услуги</a></li>
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">Контакты</a></li>
+                        </ul>
+                  
+                  
+                        <ul class="footer__list ">
+                              <li class = "footer__item  "> <h3 class="footer__item-h3">Наши проекты </h3></li> 
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">РосНано</a></li>
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">Сколково</a></li>
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">Проект “Восток”</a></li>
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">Проект “Восток”</a></li>
+                        </ul>
+                        <ul class="footer__list ">
+                              <li class = "footer__item  "> <h3 class="footer__item-h3"> Социальные сети </h3></li>
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">VK.com</a></li>
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">Instagram</a></li>
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">Facebook</a></li>
+                              <li class = "footer__item footer__item--arrow-right"><a href="#">Twitter</a></li>
+                  
             </div>
             <p class="footer__text">(с) 2019. Все права защищены.</p>
       </footer>

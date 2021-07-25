@@ -40,6 +40,7 @@
             &__down-list {
                   list-style-type: none;
                   padding-left: 0;
+                  padding: 0 15px;
             }
             &__down-item {
 
@@ -70,4 +71,47 @@
                               }
                   }
             }
+      @include media(medium){
+            &__up {
+                  height: 300px;
+                  padding-top: 30px;
+            }
+            &__down-list {
+                  padding-top: 13%
+            }
+            &__up-title h2 {
+                  font-size: 27px;
+                  line-height: 40px;
+            }
+      }
+      @include media(mediumSmall){
+            &__down {
+                  height: 1500px;
+            }
+            &__down-container {
+                  flex-flow: column;
+                  
+            }
+            &__down-list {
+                  display: flex;
+                  flex-flow: column;
+                  align-items: center;
+                  padding-top: 50px;
+            }
+            
+      }
+      @include media(verySmall) {
+            &__up {
+                  height: 400px;
+            }
+            &__up-title {
+                  display: flex;
+                  flex-direction: column;
+                  
+                  align-items: flex-start;
+            }
+            &__down-container {
+                  margin-top: 50px;
+            }
+      }     
 }

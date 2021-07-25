@@ -18,3 +18,36 @@ $font-extraBold: "MontserratExtra-bold";
 
 $time: 0.6s;
 //===== variables ========
+
+
+//===== mixins ===========//
+
+@mixin media($breakPoint) {
+      @if($breakPoint == large) {
+            @media(max-width: 1000px){
+                  @content;
+            }
+      }
+      @if($breakPoint == medium) {
+            @media(max-width: 750px){
+                  @content;
+            }
+      }
+      @if($breakPoint == mediumSmall) {
+            @media(max-width: 600px){
+                  @content;
+            }
+      }
+      @if($breakPoint == small) {
+            @media(max-width: 600px){
+                  @content;
+            }
+      }
+      @if($breakPoint == verySmall) {
+            @media(max-width: 520px){
+                  @content;
+            }
+      }
+}
+
+//===== mixins ===========//

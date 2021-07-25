@@ -25,3 +25,9 @@
                   
             }
 }
+
+@include media(large){
+      .container {
+            padding: 0 15px;
+      }
+}

@@ -23,6 +23,7 @@
                   justify-content: space-evenly;       
                   
             }
+            
             &__menu-item {
                   color: white;
                   font-family: $font-medium;
@@ -32,13 +33,29 @@
                   height: 100px;
                   
             }
-            &__menu-item_active {
+            &__burger-menu {
+                  
+                  margin-right: 20px;
+                  display: none;
+                        span {
+                              display: block;
+                              background-color: white;
+
+                              width: 30px;
+                              height: 2px;
+                              margin-bottom: 4px;
+                        }
+            }
+            &__menu-item_hover {
 
                         &:hover{
                         border-bottom: 1px solid white;
                        
                         }
                  
+            }
+            &__menu-item_active {
+                  border-bottom: 1px solid white;
             }
             &__title {
                   margin-top: 200px;
@@ -62,5 +79,39 @@
                   
                   
             }
+
+            @include media(mediumSmall){
+            height: 750px;
+                  &__menu {
+                        display: none;     
+                        width: 100%;
+                        
+                        flex-flow: column;
+                        align-items: center;
+                        background-color: black;
+                        z-index: 50;
+                        
+                  }
+                  &__burger-menu {
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        z-index: 51;
+                        
+                  }
+                  &__title {
+                        margin-top: 50px;
+                        
+                  }
+                  
+            }
+            @include media(verySmall) {
+                  &__title-h2 {
+                        font-size: 30px;
+                  }
+            }
       
 }
+
+
